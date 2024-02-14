@@ -1,21 +1,11 @@
 @extends('layout.app')
 @section('content')
-    <div class="container my-5">
-        <div class="row">
-            <h1 class="text-center">Film List</h1>
+    <main class="vw-100 vh-100 d-flex justify-content-center align-items-center">
+        <div>
+            <h2 class="text-center">La nostra film-list</h2>
+            <div class="d-flex justify-content-center">
+                <a href="{{ route('films') }}" class="btn btn-sm btn-primary">Visualizza film</a>
+            </div>
         </div>
-        <div class="row">
-            @foreach ($movies as $movie)
-                <div class="col-6 mt-5">
-                    <div class="card p-2">
-                        <h4 class="card-title text-center">{{ $movie['title'] }}</h4>
-                        <p class="card-text text-center">{{ $movie['original_title'] }}</p>
-                        <span class="card-text">Nazione: {{ $movie['nationality'] }}</span>
-                        <span class="card-text">Data di uscita: {{ $movie['date'] }}</span>
-                        <span class="card-text">Voto: {{ $movie['vote'] }}</span>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-    </div>
+    </main>
 @endsection
