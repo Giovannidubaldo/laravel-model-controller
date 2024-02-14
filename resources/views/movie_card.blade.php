@@ -8,7 +8,7 @@
             @foreach ($movies as $movie)
                 <div class="col-6 mt-5">
                     <div class="card p-2">
-                        <h4 class="card-title text-center">{{ $movie['title'] }}</h4>
+                        <h4 class="card-title text-center"><a href="">{{ $movie['title'] }}</a></h4>
                         <p class="card-text text-center">{{ $movie['original_title'] }}</p>
                         <span class="card-text">Nazione: {{ $movie['nationality'] }}</span>
                         <span class="card-text">Data di uscita: {{ $movie['date'] }}</span>
