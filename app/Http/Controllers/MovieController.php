@@ -7,5 +7,8 @@ use App\Model\Movie;
 
 class MovieController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('home');
+    }
 }
